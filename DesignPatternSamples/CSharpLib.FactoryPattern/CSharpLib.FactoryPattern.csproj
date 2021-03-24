@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51A3F7CC-EB0D-4A9C-BC5E-B7B26384939B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharpLib.FactoryPattern</RootNamespace>
+    <AssemblyName>CSharpLib.FactoryPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\BuildOutput\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pluralsight_FactorySample\Factory2\AutoFactory.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory2\Auto\BMW335Xi.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory2\Auto\IAuto.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory2\Auto\MiniCooper.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory2\Auto\NullAuto.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory3\Auto\BMW.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory3\Auto\IAuto.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory3\Auto\MiniCooper.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory3\CreateFactory.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory3\Factories\BMWFactory.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory3\Factories\IAutoFactory.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory3\Factories\MiniCooperFactory.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Autos\BMW\BMW328i.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Autos\BMW\BMW740i.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Autos\BMW\BMWBase.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Autos\BMW\BMWM3.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Autos\Mini\MiniCooper.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Autos\NullAutomobile.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\CreateFactory.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Factory\BMWFactory.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Factory\IAutoFactory.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Autos\IAutomobile.cs" />
+    <Compile Include="Pluralsight_FactorySample\Factory4\Factory\MiniCooperFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wrox_FactorySample\Address.cs" />
+    <Compile Include="Wrox_FactorySample\DHL.cs" />
+    <Compile Include="Wrox_FactorySample\IShippingCourier.cs" />
+    <Compile Include="Wrox_FactorySample\Order.cs" />
+    <Compile Include="Wrox_FactorySample\OrderService.cs" />
+    <Compile Include="Wrox_FactorySample\RoyalMail.cs" />
+    <Compile Include="Wrox_FactorySample\UKShippingCourierFactory.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

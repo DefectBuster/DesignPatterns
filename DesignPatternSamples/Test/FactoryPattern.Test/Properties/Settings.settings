@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FactoryPattern.Test.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Factory3_BMW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CSharpLib.FactoryPattern.Pluralsight_FactorySample.Factory3.BMWFactory</Value>
+    </Setting>
+    <Setting Name="Factory3_Mini" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CSharpLib.FactoryPattern.Pluralsight_FactorySample.Factory3.MiniCooperFactory</Value>
+    </Setting>
+    <Setting Name="Factory4_AutoFactory_BMW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CSharpLib.FactoryPattern.Pluralsight_FactorySample.Factory4.Factory.BMWFactory</Value>
+    </Setting>
+    <Setting Name="Factory4_AutoFactory_Mini" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CSharpLib.FactoryPattern.Pluralsight_FactorySample.Factory4.Factory.MiniCooperFactory</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
